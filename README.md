@@ -1,118 +1,24 @@
-# ScrapeFlow
+# AFS
 
-ScrapeFlow is a powerful SaaS platform for workflow automation with integrated web scraping capabilities. Built on Next.js, FlowScrape lets users automate complex data extraction workflows, securely store credentials, manage billing, and monitor performance—all in one intuitive interface.
+AFS 是一个功能强大的 SaaS 平台，用于工作流自动化，具有集成的 Web 抓取功能。AFS 基于 Next.js 构建，允许用户自动化复杂的数据提取工作流程、安全地存储凭证、管理账单和监控性能——所有这些都在一个直观的界面中完成。
 
-![FlowScrape1_screenshot](/public/preview/preview_1.png)
+<img width="1280" alt="1613617da4603758aa1a81ca358fb40" src="https://github.com/user-attachments/assets/05cf87e1-9f35-4692-9a0d-b51987530303" />
+<img width="1277" alt="4459130c7f46e60a035d2bb0a48c0bc" src="https://github.com/user-attachments/assets/58f1c4ea-0f44-46ca-acaf-cbd5ffd62485" />
+<img width="1274" alt="f16550efa60f4bd7d944d59248f799c" src="https://github.com/user-attachments/assets/43aa4b2e-9cf2-4da0-b21f-e8d1db7de2ac" />
 
-![FlowScrape2_screenshot](/public/preview/preview_2.png)
+## 📋 主要特点
+- 工作流自动化：轻松构建和执行多步骤工作流。使用分配的积分在不同阶段运行任务，从而提供对抓取执行的精细控制。
 
-## 📋 Key Features
+- 高级 Web 抓取工具：访问一套抓取工具，根据不同的数据需求设计定制的工作流程，支持自动化作和计划执行。
 
-- **Workflow Automation**: Easily build and execute multi-step workflows. Run tasks in distinct phases with assigned credits, providing granular control over your scraping executions.
+- 凭证存储：通过加密存储安全地存储 API 密钥、令牌和其他敏感信息，确保安全处理凭证。
 
-- **Advanced Web Scraping Tools**: Access a suite of scraping tools to design customized workflows tailored to different data needs, supporting automated actions and scheduled executions.
+- Stripe 计费系统：通过Stripe 集成轻松管理您的账单和订阅，实现透明的使用跟踪、订阅管理和账单历史记录。
 
-- **Credential Storage**: Securely store API keys, tokens, and other sensitive information with encrypted storage, ensuring secure handling of credentials.
+- 直观的 UI 和分析：体验使用 ShadCn 构建的干净、现代的 UI，具有实时图表和报告，可全面监控抓取性能和使用情况。
 
-- **Billing System with Stripe**: Effortlessly manage your billing and subscriptions with our Stripe integration, allowing for transparent usage tracking, subscription management, and billing history.
+- 安全的服务器端处理： AFS使用 Next.js 服务器作进行后端作，确保敏感任务的安全处理。
 
-- **Intuitive UI and Analytics**: Experience a clean, modern UI built with ShadCn, featuring real-time charts and reports for comprehensive monitoring of scraping performance and usage.
-
-- **Secure Server-Side Handling**: FlowScrape uses Next.js server actions for backend operations, ensuring secure processing of sensitive tasks.
-
-- **AI-Powered Web Scraping (Beta)**: Explore our beta AI-driven feature that intelligently navigates and scrapes data from complex websites.
-
-## 🚀 Getting Started
-
-1. **Sign Up**: Create an account on FlowScrape and choose a subscription plan that suits your needs. FREE 100 credits are provided for first time users.
-2. **Add Credentials**: Securely store your API keys, tokens, and other credentials for seamless workflow execution.
-3. **Build Your Workflow**: Utilize FlowScrape’s tools to design your workflow phases, and scrape the web with controlled execution.
-4. **Monitor and Analyze**: Track the performance of your workflows through real-time analytics, and manage your billing and usage directly on the dashboard.
-
-## 🛠️ Tech Stack
-
-- **Frontend**: [Next.js](https://nextjs.org/), [Tailwind](https://tailwindcss.com/) and [ShadCn](https://shadcn.dev) for UI components
-- **Backend**: Secure server-side processing with [Next.js](https://nextjs.org/) server actions
-- **Billing**: [Stripe](https://stripe.com) integration for payment processing
-- **Security**: Encrypted credential storage to protect sensitive data
-- **Analytics**: Real-time data visualization and reporting
-
-## 📊 Usage & Billing
-
-FlowScrape's credit-based system allows you to manage workflow executions efficiently. The Stripe integration provides transparent billing, letting you track usage and manage subscriptions.
-
-### Steps
-
-1. **Clone the repository**
-   ```bash
-   git clone https://github.com/yourusername/scrapeflow.git
-   cd scrapeflow
-   ```
-
-2. **Install dependencies**
-   ```bash
-   npm install
-   ```
-
-3. **Set up environment variables**
-   Create a `.env` file in the root directory and add the following:
-   ```env
-   NEXT_PUBLIC_OPENAI_API_KEY=your_openai_api_key
-   DATABASE_URL=postgresql://username:password@localhost:5432/yourdb
-   NEXTAUTH_SECRET=your_nextauth_secret
-   NEXTAUTH_URL=http://localhost:3000
-   ```
-
-4. **Run database migrations**
-   ```bash
-   npx prisma migrate dev
-   ```
-
-5. **Start the development server**
-   ```bash
-   npm run dev
-   ```
-   The app will be available at `http://localhost:3000`.
-
----
-
-## Usage
-
-### 1. **Sign Up/Log In**
-   - Use NextAuth.js to sign up or log in to your account.
-
-### 2. **Create a Workflow**
-   - Drag and drop nodes to define scraping tasks.
-   - Use AI suggestions for selector optimization.
-
-### 3. **Set Credentials**
-   - Securely store website login credentials if required.
-
-### 4. **Schedule Scraping**
-   - Use the scheduling feature to automate scraping tasks.
-
-### 5. **Export Data**
-   - Download scraped data in the desired format.
-
----
-
-## Development
-
-### Scripts
-- **Start development server**: `npm run dev`
-- **Build for production**: `npm run build`
-- **Run production server**: `npm start`
-
-### Linting and Formatting
-- **Lint code**: `npm run lint`
-- **Format code**: `npm run format`
-
----
-
-## Roadmap
-- Add support for multi-step scraping workflows.
-- Integrate more export formats (e.g., Google Sheets, Excel).
-- Enhance AI capabilities for broader use cases.
-
+- AI 驱动的 Web Scraping （Beta）：该功能可让用户按照想要的格式智能地导航和从复杂网站抓取数据。
 
 
